@@ -14,26 +14,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.alipay.sofa.dashboard.client.registry.zookeeper;
+package com.alipay.sofa.dashboard.client.common;
 
 /**
- * @author chen.pengzhi (chpengzh@foxmail.com)
- */
-public class ZookeeperConstants {
-
-    public static final String SEPARATOR                 = "/";
-
-    public static final String SOFA_BOOT_CLIENT_ROOT     = SEPARATOR + "apps";
-
-    public static final String SOFA_BOOT_CLIENT_INSTANCE = SOFA_BOOT_CLIENT_ROOT + SEPARATOR
-                                                           + "instance";
-
+ * @author: guolei.sgl (guolei.sgl@antfin.com) 2019/8/26 2:32 PM
+ * @since:
+ **/
+public class Constants {
     public static final String COLON                     = ":";
+    public static final String COMMA                     = ",";
+    public static final String SEPARATOR                 = "/";
+    public static final String SOFA_BOOT_CLIENT_ROOT     = SEPARATOR + "apps";
+    public static final String SOFA_BOOT_CLIENT_INSTANCE = SEPARATOR + "instance";
+    public static final String SOFA_BOOT_CLIENT_BIZ      = SEPARATOR + "biz";
 
-    public static final String QUERY                     = "?";
-
-    public static final String AND                       = "&";
-
-    public static final String EQUAL                     = "=";
-
+    public static final String APP_NAME_KEY              = "spring.application.name";
+    public static final String SERVER_PORT_KEY           = "server.port";
+    public static final String SERVER_DEFAULT_PORT       = "8080";
 }
